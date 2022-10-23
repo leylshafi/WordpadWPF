@@ -1,0 +1,171 @@
+﻿<Window x:Class="Source.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Source"
+        mc:Ignorable="d"
+        Title="Wordpad" Height="450" Width="800" Background="#FF9C9A9A" BorderBrush="#FF383838" Foreground="White">
+    <Grid>
+
+        <TabControl Background="Transparent" BorderBrush="Transparent">
+
+            <TabItem Name="Home" BorderBrush="Transparent" Header="Home" Background="WhiteSmoke" HorizontalAlignment="Left" Width="44">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="113*"/>
+                        <ColumnDefinition Width="154*"/>
+                        <ColumnDefinition Width="527*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="6*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.ColumnSpan="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="53*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="92*"/>
+                            <ColumnDefinition Width="61*"/>
+                            <ColumnDefinition Width="61*"/>
+                            <ColumnDefinition Width="197*"/>
+                            <ColumnDefinition Width="98*"/>
+                            <ColumnDefinition Width="92*"/>
+                            <ColumnDefinition Width="92*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Orientation="Horizontal" Grid.ColumnSpan="2">
+                            <Button Width="30" Height="30" Margin="20 10 0 0" VerticalAlignment="Center" BorderBrush="Transparent" ToolTip="Bold" Click="Button_Click_4">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/icons8-bold-90 (1).png" Stretch="Uniform"/>
+                                </Button.Background>
+                            </Button>
+                            <Button Width="30" Height="30"  Margin="0 10 0 0" VerticalAlignment="Center" BorderBrush="Transparent" ToolTip="Italic" Click="Button_Click_3">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/icons8-italic-90 (1).png" Stretch="Uniform"/>
+                                </Button.Background>
+                            </Button>
+                            <Button Width="30" Height="30"   Margin="0 10 0 0" VerticalAlignment="Center" BorderBrush="Transparent" ToolTip="Underline" Click="Button_Click_5">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Images/icons8-underline-90 (1).png" Stretch="Uniform"/>
+                                </Button.Background>
+                            </Button>
+
+                        </StackPanel>
+
+                        <Button Grid.Column="2" Width="30" Height="30"   Margin="56,19,6,0" VerticalAlignment="Center" HorizontalAlignment="Left" BorderBrush="Transparent" ToolTip="Font" Click="Button_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/icons8-font-size-100.png"/>
+                            </Button.Background>
+                        </Button>
+                        <Button Grid.Column="3" Width="30" Height="30"   Margin="30,19,1,0" VerticalAlignment="Center" BorderBrush="Transparent" ToolTip="Text Color" Click="Button_Click_2">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/icons8-text-color-90.png"/>
+                            </Button.Background>
+                        </Button>
+                        <Button Grid.Column="4" Width="30" Height="30"   Margin="30,19,1,0" VerticalAlignment="Center" ToolTip="Background Color" BorderBrush="Transparent" Click="Button_Click_1">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/icons8-rgb-color-wheel-80.png" Stretch="Fill"/>
+                            </Button.Background>
+
+                        </Button>
+                        <Expander Grid.Column="5"  Margin="30 5 0 0" VerticalAlignment="Center" ToolTip="Background Color" Header=" Choose Alignment" Foreground="White" FontSize="17" FontFamily="Times New Roman" >
+                            <StackPanel Orientation="Horizontal">
+                                <Button Name="Left" Width="30" Height="30"   Margin="30 0 0 0" VerticalAlignment="Center" ToolTip="Left" BorderBrush="Transparent" Click="Left_Click">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="Images/icons8-align-left-90.png"/>
+                                    </Button.Background>
+                                </Button>
+                                <Button Name="Center" Width="30" Height="30"   Margin= "3 0" VerticalAlignment="Center" ToolTip="Center" BorderBrush="Transparent" Click="Left_Click">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="Images/icons8-align-center-90.png"/>
+                                    </Button.Background>
+                                </Button>
+                                <Button Name="Right" Width="30" Height="30"   VerticalAlignment="Center" ToolTip="Right" BorderBrush="Transparent" Click="Left_Click">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="Images/icons8-align-right-90.png"/>
+                                    </Button.Background>
+                                </Button>
+
+
+                            </StackPanel>
+                        </Expander>
+                        <StackPanel Grid.Column="5" Orientation="Horizontal" Grid.ColumnSpan="3" Margin="183,0,91,0">
+                            <RepeatButton Name="Inc" Width="30" Height="30"   Margin="30 10 0 0" VerticalAlignment="Center" ToolTip="Background Color" BorderBrush="Transparent" Click="Inc_Click">
+                                <RepeatButton.Background>
+                                    <ImageBrush ImageSource="Images/icons8-increase-font-90.png"/>
+                                </RepeatButton.Background>
+
+
+                            </RepeatButton>
+                            <RepeatButton Name="Dec" Width="30" Height="30"   Margin="5 10 0 0" VerticalAlignment="Center" ToolTip="Background Color" BorderBrush="Transparent" Click="Inc_Click">
+                                <RepeatButton.Background>
+                                    <ImageBrush ImageSource="Images/icons8-decrease-font-90.png"/>
+                                </RepeatButton.Background>
+
+
+                            </RepeatButton>
+                        </StackPanel>
+
+                        <Button  Grid.Column="7" Width="30" Height="30"   Margin="46,19,15,0" VerticalAlignment="Center" ToolTip="Date and Time" BorderBrush="Transparent" Click="Button_Click_6">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/icons8-date-64.png"/>
+                            </Button.Background>
+
+                        </Button>
+                        <Button Grid.Column="8" Width="70" Height="60" BorderBrush="Transparent" Margin="11,0,11,-2" VerticalAlignment="Center">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Images/icons8-microsoft-word-2019-480.png" Stretch="Uniform"/>
+                            </Button.Background>
+
+                        </Button>
+
+
+                    </Grid>
+
+
+
+                    <RichTextBox x:Name="richTextBox1" Grid.Row="1" Padding="5" Margin="5,5,5,5" Grid.ColumnSpan="3">
+
+                    </RichTextBox>
+
+                </Grid>
+
+            </TabItem>
+            <TabItem BorderBrush="Transparent" Header="File" Background="WhiteSmoke">
+                <StackPanel>
+                    <Button Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_7" >New</Button>
+                    <Button Width="100" HorizontalAlignment="Left" Margin="0 3" VerticalAlignment="Top" Click="Button_Click_8">Open</Button>
+                    <Button Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_9" >Save</Button>
+                    <Button Width="100" HorizontalAlignment="Left" Margin="0 3" VerticalAlignment="Top" Click="Button_Click_10" >Print</Button>
+                    <Button Width="100" HorizontalAlignment="Left" Margin="0 3" VerticalAlignment="Top" Click="Button_Click_11" >Exit</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem BorderBrush="Transparent" Header="Format" Background="WhiteSmoke">
+                <StackPanel>
+                    <Expander Header="Word Wrap" Foreground="WhiteSmoke" FontSize="20">
+                        <ToggleButton Width="100" Height="30" HorizontalAlignment="Left" Click="ToggleButton_Click">Off</ToggleButton>
+                    </Expander>
+                    
+                </StackPanel>
+            </TabItem>
+            <TabItem BorderBrush="Transparent" Header="Edit" Background="WhiteSmoke">
+                <StackPanel>
+                    <Button Width="100" HorizontalAlignment="Left" Margin="0 1" VerticalAlignment="Top" Click="Button_Click_12" >Undo</Button>
+                    <Button Width="100" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_13" >Redo</Button>
+                    <Button Width="100" HorizontalAlignment="Left" Margin="0 1" VerticalAlignment="Top" Click="Button_Click_14" >Copy</Button>
+                    <Button Width="100" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_15">Cut</Button>
+                    <Button Width="100" HorizontalAlignment="Left" Margin="0 1" VerticalAlignment="Top" Click="Button_Click_16" >Paste</Button>
+                    <Button Width="100" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_17" >Delete</Button>
+                    <Button Width="100" HorizontalAlignment="Left" Margin="0 1" VerticalAlignment="Top" Click="Button_Click_18" >Delete All</Button>
+                    <Button Width="100" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_20" >Select All</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem BorderBrush="Transparent" Header="Help" Background="WhiteSmoke">
+                <StackPanel>
+                    <Button  Width="100" HorizontalAlignment="Left" Margin="0 1" VerticalAlignment="Top" Background="WhiteSmoke" Foreground="YellowGreen" Click="Button_Click_19">Information</Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

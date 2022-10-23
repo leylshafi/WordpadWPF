@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="download.png" />
+    <None Remove="icons8-align-center-90.png" />
+    <None Remove="icons8-align-left-90.png" />
+    <None Remove="icons8-align-right-90.png" />
+    <None Remove="icons8-bold-90 %281%29.png" />
+    <None Remove="icons8-bold-90.png" />
+    <None Remove="icons8-date-64.png" />
+    <None Remove="icons8-decrease-font-90.png" />
+    <None Remove="icons8-font-size-100.png" />
+    <None Remove="icons8-increase-font-90.png" />
+    <None Remove="icons8-italic-90 %281%29.png" />
+    <None Remove="icons8-italic-90.png" />
+    <None Remove="icons8-microsoft-word-2019-480.png" />
+    <None Remove="icons8-rgb-color-wheel-80.png" />
+    <None Remove="icons8-text-color-90.png" />
+    <None Remove="icons8-underline-90 %281%29.png" />
+    <None Remove="icons8-underline-90.png" />
+    <None Remove="images.jpg" />
+    <None Remove="png-clipart-microsoft-word-word-processor-document-wordpad-template-blue.png" />
+    <None Remove="png-clipart-simply-styled-icon-set-731-icons-free-wordpad-white-and-blue-a-thumbnail.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\download.png" />
+    <Resource Include="Images\icons8-align-center-90.png" />
+    <Resource Include="Images\icons8-align-left-90.png" />
+    <Resource Include="Images\icons8-align-right-90.png" />
+    <Resource Include="Images\icons8-bold-90 %281%29.png" />
+    <Resource Include="Images\icons8-bold-90.png" />
+    <Resource Include="Images\icons8-date-64.png" />
+    <Resource Include="Images\icons8-decrease-font-90.png" />
+    <Resource Include="Images\icons8-font-size-100.png" />
+    <Resource Include="Images\icons8-increase-font-90.png" />
+    <Resource Include="Images\icons8-italic-90 %281%29.png" />
+    <Resource Include="Images\icons8-italic-90.png" />
+    <Resource Include="Images\icons8-microsoft-word-2019-480.png" />
+    <Resource Include="Images\icons8-rgb-color-wheel-80.png" />
+    <Resource Include="Images\icons8-text-color-90.png" />
+    <Resource Include="Images\icons8-underline-90 %281%29.png" />
+    <Resource Include="Images\icons8-underline-90.png" />
+    <Resource Include="Images\images.jpg" />
+    <Resource Include="Images\png-clipart-microsoft-word-word-processor-document-wordpad-template-blue.png" />
+    <Resource Include="Images\png-clipart-simply-styled-icon-set-731-icons-free-wordpad-white-and-blue-a-thumbnail.png" />
+  </ItemGroup>
+
+</Project>
